@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(92, 1, 177);
+    padding: 8px 0;
+}
+
+header h1 {
+    font-size: 20pt;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 80px;
+}
+
+label, input {
+    font-size: 18pt;
+}
+
+fieldset {
+    font-size: 18pt;
+    height: 250px;
+    float: right;
+    position: relative;
+    bottom: 280px;
+    margin-right: 50px;
+    border-radius: 10px;    
+}
+
+#container {
+    width: 70%;
+    height: 500px;
+    border: 4px solid rgb(189, 0, 72);
+    margin: 40px auto;   
+}
+
+#campo_id {
+    width: 30%;
+    height: 40px;
+    padding: 40px 0 0 40px;
+    margin: 0;
+}
+
+#campo_nome {
+    width: 70%;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    right: 100px;
+}
+
+.numero {
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 30%;
+    height: 40px;
+    outline: none;
+}
+
+.texto {
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 50%;
+    height: 40px;
+    outline: none;
+}
+
+#campo_desc {
+    clear: both;
+    padding: 30px 0 0 40px;
+}
+
+.campo_texto {
+    margin-top: 10px;
+    border-radius: 6px;
+    outline: none;
+}
+
+#campo_cat {
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+
+.opcao {
+    position: relative;
+    top: 4px;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.opcao:hover {
+    height: 25px;
+    width: 25px;
+    text-transform: bold;
+}
+
+#campo_valor {
+    padding: 30px 0 0 40px;
+}
+
+.val {
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 25%;
+    height: 40px;
+    outline: none;
+}
+
+#campo_quantidade {
+    float: right;
+    position: relative;
+    bottom: 83px;
+}
+
+.quant {
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 65%;
+    height: 40px;
+    outline: none;
+}
+
+#envia {
+    float: right;
+    position: relative;
+    left: 435px;
+    bottom: 48px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(92, 1, 177);
+    color: white;
+    outline: none;
+}
+
+#envia:hover {  
+    background-color: rgb(189, 0, 72);
+    transition: 400ms;
+    cursor: pointer;
+}
+
+#apaga {
+    float: right;
+    position: relative;
+    left: 680px;
+    bottom: 65px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(92, 1, 177);
+    color: white;
+    outline: none;
+}
+
+#apaga:hover {
+    background-color: rgb(189, 0, 72);
+    transition: 400ms;
+    cursor: pointer;
+}

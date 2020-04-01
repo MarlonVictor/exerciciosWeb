@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link href="form01.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastre o Produto :</h1>
+    </header>
+
+    <div id="container">
+
+        <form method="POST" action="mailto:mcoimbra@unigranrio.br">
+
+            <div id="campo_id">
+                <label>Id</label><br>
+                <input class="numero" type="number" name="id_produto" min="1" max="9999" value="0000" required>
+            </div>
+
+            <div id="campo_nome">
+                <label>Nome do Produto</label><br>
+                <input class="texto" type="text" name="nome_produto" placeholder=" Ex: Celular" required>
+            </div>
+
+            <div id="campo_desc">
+                <label>Descreva o Produto</label><br>
+                <textarea class="campo_texto" name="descricao" cols="64" rows="7"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Selecione a Categoria: </legend>
+                <div id="campo_cat">
+                    <input class="opcao" type="radio" name="categoria" value="info">
+                    <label>Informática</label><br>
+                    <input class="opcao" type="radio" name="categoria" value="portatil">
+                    <label>Eletroportáteis</label><br>
+                    <input class="opcao" type="radio" name="categoria" value="domestico">
+                    <label>Eletrodomésticos</label>
+                </div>
+            </fieldset>
+
+            <div id="campo_valor">
+                <label>Valor da Unidade</label><br>
+                <input class="val" type="text" name="val_produto" min="50,00" max="5000,00" placeholder=" $299,90"
+                    required>
+            </div>
+
+            <div id="campo_quantidade">
+                <label>Quantidade</label><br>
+                <input class="quant" type="number" name="quant_produto" value="1" required>
+            </div>
+
+            <input id="envia" type="submit" name="envia" value="Cadastrar"><br>
+            <input id="apaga" type="reset" name="apaga" value="Limpar">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
