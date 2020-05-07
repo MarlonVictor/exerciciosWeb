@@ -3,4 +3,4 @@
 * Primeiro projeto da matéria Prática de Programação em Sistemas Web.
 * Site feito somente com HTML e CSS.
 
-* LINK: 
+* LINK: https://marlonvictor.github.io/exerciciosWeb/projeto01
