@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    color: #6C6C55;
+    background-color: #F6F8FA;
+    font-family: 'Pangolin', cursive;
+    overflow: hidden;
+}
+
+/**/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.title {
+    width: 470px;
+}
+.title h1 {
+    font-size: 80px;
+    animation: type 5s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+@keyframes type { /* Letter animation */
+    0% {
+        width: 0ch;
+        border-right: 3px solid #6C6C55;
+    }
+    100% {
+        width: 20ch;
+    }
+}
+.form {
+    padding-top: 5%;
+}
+.form input, .form label[for="start"] {
+    margin: 5px 0;
+    padding: 15px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #6C6C55;
+}
+.form label[for="start"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    width: 150px;
+    background-color: #01A2AC;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.form input[id="start"] {
+    display: none;
+}
+.form label[for="start"]:hover, .opc button:hover {
+    position: relative;
+    top: 2px;
+}
+
+/**/
+
+#modal {
+    background-color: #F6F8FA;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+}
+#modal .content {
+    width: 70%;
+    margin: auto;
+}
+
+/**/
+
+.topo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 100px 20px;
+}
+.topo h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #01A2AC;
+    padding-bottom: 5px;
+}
+.opc button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.opc button img{
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+
+.display {
+    background-image: url('https://images.pexels.com/photos/812264/pexels-photo-812264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position-y: -40px;
+    width: 100%;
+    height: 450px;
+}
+.display-content {
+    width: 60%;
+    max-height: 80%;
+    position: relative;
+    top: 45px;
+    margin: auto;
+}
+.display-content--left, .display-content--right {
+    color: #F6F8FA;
+    width: 35%;
+    padding: 7%;
+    text-transform: uppercase;
+}
+.display-content--left {
+    float: left;
+    border-right: 2px solid #F6F8FA;
+}
+.display-content--right {
+    float: right;
+}
+.display-content--left img, .display-content--right img {
+    margin-left: 25%;
+    padding-top: 40%;
+}
+
+/**/
+
+.resultado {
+    text-align: center;
+    padding-top: 40px;
+}
+.resultado span {
+    color: #01A2AC;
+    font-size: 30px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}

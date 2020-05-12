@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>JoKenPo</title>
+</head>
+
+<body>
+    
+    <main class="home">
+        <div class="title">
+            <h1>Jo - ken - po</h1>
+        </div>
+        <div class="form">
+            <form>
+                <label for="player">Digite seu nome:</label><br>
+                <input type="text" id="player" placeholder="______________________________" autocomplete="off"><br>
+                <label for="start">Start!</label>
+                <input type="checkbox" id="start" onchange="enter()">
+            </form>
+        </div> 
+    </main>
+
+    <main id="modal">
+        <div class="content">
+            <div class="topo">
+                <h3>Suas Escolhas:</h3>
+                <div class="opc">
+                    <button onclick="start(1)"><img src="images/pedra.png" alt="Pedra"></button>
+                    <button onclick="start(2)"><img src="images/papel.png" alt="Papel"></button>
+                    <button onclick="start(3)"><img src="images/tesoura.png" alt="Tesoura"></button>
+                </div>
+            </div>
+            <div class="display">
+                <div class="display-content">
+                    <div class="display-content--left">
+                        <h3 id="playerName">Marlon</h3>
+                        <span id="jogo1"></span>
+                    </div>
+                    <div class="display-content--right">
+                        <h3>Computador</h3>
+                        <span id="jogo2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado">
+                <h2 id="result">Clique em uma das opções <span>acima</span>!</h2>
+            </div>
+        </div>
+    </main>
+
+    <script src="public/script.js"></script>
+</body>
+</html> 
