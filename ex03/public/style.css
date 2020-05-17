@@ -41,7 +41,7 @@ body {
 .form {
     padding-top: 5%;
 }
-.form input, .form label[for="start"] {
+.form input, .form label[for="start"], .button {
     margin: 5px 0;
     padding: 15px;
     width: 300px;
@@ -156,4 +156,14 @@ body {
     font-size: 30px;
     margin-left: 10px;
     text-transform: uppercase;
+}
+a {
+
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #6C6C55;
+}
+a:hover {
+    border-bottom: 2px solid #01A2AC;
 }
