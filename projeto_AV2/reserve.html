@@ -3,39 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Reservar - AUTO LEASING</title>
 </head>
 <body>
     <header class="pag_reserve">
         <div id="header_top">
-            <img src="img/logo.png" alt="Logo da Página">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo da Página"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="questions.html">Perguntas Frequentes</a></li>
             </ul>
         </div>
 
-        <form method=”post” action=”mailto:mcoimbra@unigranrio.br” id="reserve">
+        <form id="reserve" onsubmit="return openModal()">
             <h1>Alugar um carro</h1>
-            <input type="text" name="nome" placeholder="Nome Completo*"><br>
-            <input type="email" name="email" placeholder="Email*"><br>
-            <input type="text" name="num" placeholder="Celular*"><br>
-            <input type="text" name="data_ret" placeholder="Data de Retirada / Local"><br>
-            <input type="text" name="data_ent" placeholder="Data de Entrega / Local"><br>
-            <textarea cols="30" name="msg" rows="5" placeholder="Menssagem*"></textarea><br>
+            <input type="text"  placeholder="Nome Completo*" required><br>
+            <input type="email" placeholder="Email*" required><br>
+            <input type="text" id="tel" placeholder="Celular*" required onkeydown="return allowedKey()" onkeypress="maskTel()" maxlength="14" autocomplete="off"><br>
+            <input type="text" placeholder="Data de Retirada / Local*" required><br>
+            <input type="text" placeholder="Data de Entrega / Local*" required><br>
+            <textarea cols="30" rows="5" placeholder="Menssagem"></textarea><br>
             <input type="submit" class="send" value="ALUGAR AGORA">
         </form>
     </header>
+
+    <section id="modal">
+        <div class="content">
+            <div class="close">+</div>
+            <h2>Carros disponiveis nesse momento:</h2>
+            <p>Faça sua escolha</p>
+            <div class="select">
+                <div class="inputs">
+                    <input id="c1" type="radio" name="car" value="Gol">
+                    <input id="c2" type="radio" name="car" value="Ônix">
+                    <input id="c3" type="radio" name="car" value="Renegade">
+                    <input id="c4" type="radio" name="car" value="Spin">
+                    <input id="c5" type="radio" name="car" value="A3 Sedan">
+                </div>
+                <div class="view">
+                    <button  onclick="choseCar()">Avançar</button>  
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact">
         <h1>Central Auto Leasing:</h1>
         <p class="one"><i class="fas fa-home"></i><strong>Endereço:</strong><br>
             Rua Mario Ribeiro - Leblon, Rio de Janeiro - RJ</p>
-        <p class="one"><i class="fas fa-clock"></i><strong>Horário de funcionamento:</strong><br>
+        <p class="one"><i class="fas fa-clock"></i><strong>Horário de funcionamento</strong><br>
             Seg-Dom 24 horas</p>
         <p class="two"><i class="fas fa-phone"></i><strong>Telefone:</strong>
             (21) 90000 - 9999</p>
@@ -48,5 +68,7 @@
         <p>&copy; &nbsp; &nbsp; Todos direitos reservados</p>
         <p>Dev: Marlon Victor</p>
     </footer>
+
+    <script src="forms.js"></script> 
 </body>
 </html>
