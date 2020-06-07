@@ -1,0 +1,129 @@
+body {
+    overflow-x: hidden;
+}
+
+#questions {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 30px;
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 5%;
+        border-bottom: 3px solid $color-1;
+        width: 520px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    main {
+        margin: 5%;
+    }
+    img {
+        height: 100%;
+        margin-top: 260px;
+    }
+}
+
+.lista_item {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(1, 1, 1, 0.1);
+}
+
+.faq_title {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.faq_title::before {
+    content: '+';
+    transition: 300ms;
+    margin-right: 30px;
+    color: $color-1;
+} 
+
+.faq_content {
+    padding: 10px;
+    line-height: 1.4em;
+    display: none;
+}
+
+.trigger_input {
+    display: none;
+}
+
+.trigger_input:checked + .trigger_wrapper .faq_title::before {
+    content: '>';
+}
+
+.trigger_input:checked + .trigger_wrapper .faq_content {
+    display: block;
+}
+
+#ask {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 5%;
+        color: $color-4;
+        text-align: center;
+    }
+    input, textarea {
+        padding: 15px;
+        width: 600px;
+        border: none;
+        border-radius: 5px;
+        margin: 3%;
+        background-color: rgb(245, 245, 245);
+    }
+    input.send {
+        background-color: $color-4;
+        color: #fff;
+        cursor: pointer;
+        transition: 200ms;
+    }
+    .enviado {
+        margin-left: 3%;
+        width: 100%;
+        background-color: $color-2;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 1px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #questions {
+        h1 {
+            font-size: 30px;
+            width: 100%;
+        }
+        main {
+            width: 90%;
+        }
+        img{
+            display: none;
+        }
+    }
+    #ask input, #ask textarea {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .enviado {
+        position: relative;
+        right: 13px;
+    }
+}

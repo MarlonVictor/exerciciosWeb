@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(1, 1, 1, 0.1);
+    cursor: pointer;
+    outline: none;
+    transition: 200ms;
+}
+
+button:hover, input.send:hover {
+    filter: brightness(80%);
+}
+
+header {
+    background-image: url(../img/fundoHeader.jpg);
+    background-size: 115%;
+    height: 100vh;
+}
+
+#header_top {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+}
+
+#header_top img {
+    width: 150px;
+}
+
+#header_top a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 50px;
+    transition: 200ms;
+    font-size: 18px;
+}
+
+#header_top a:hover {
+    border-bottom: 3px solid #e78200;
+}
+
+#header_desc {
+    width: 50%;
+    font-size: 20px;
+    margin: 3%;
+    line-height: 60px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#header_desc span {
+    font-size: 50px;
+    letter-spacing: 0;
+}
+
+button.orange {
+    background-color: #e78200;
+    margin: 3%;
+}
+
+/**/
+
+#benefits {
+    display: flex;
+    margin: 65px 0;
+}
+
+#benefits img {
+    height: 100%;
+    position: relative;
+    top: 275px;
+}
+
+#benefits h1 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 5px solid #265d0c;
+    width: 350px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+#benefits p {
+    
+    width: 65%;
+    font-size: 22px;
+}
+
+#benefits p.topic {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+#benefits p.arrow {
+    margin: 10px 0 0 20px;
+}
+
+#benefits p.arrow::before {
+    content: '*';
+    position: relative;
+    top: 4px;
+    color: #265d0c;
+    margin-right: 10px;
+}
+
+/**/
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: fixed;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+    font-size: 28px;
+}
+
+#banner .cards {
+    display: flex;
+    margin-top: 40px;
+}
+
+#banner .card {
+    padding: 20px 140px;
+    line-height: 60px;
+}
+
+#banner .card span {
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 3px solid #e78200;
+    padding: 10px;
+}
+
+/**/
+
+#card {
+    margin-bottom: 3%;
+    background-color: #e78200;
+    height: 25vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.card_desc span {
+    font-size: 40px;
+    font-weight: bold;  
+}
+
+.card_button button {
+    background-color: #fff;
+    color: #e78200;
+}
+
+/**/
+
+#Luxury h1 {
+    text-align: center;
+    margin: 70px auto 0;
+    font-size: 40px;
+    border-bottom: 5px solid #cf1717;
+    width: 750px;
+    padding-bottom: 5px;
+}
+
+#Luxury .gallery {
+    width: 90%;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery p, h3 {
+    position: relative;
+    top: 230px;
+    color: white;
+    line-height: 35px;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+.gallery .r8 {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../img/r8.jpg);
+    background-size: cover;
+}
+
+.gallery .ferrari {
+    width: 595px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../img/ferrari.jpg);
+    background-size: cover;
+    background-position-y: -60px;
+    margin-left: 10px;
+}
+
+.gallery .aston {
+    width: 655px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../img/aston.jpg);
+    background-size: cover;
+    background-position-y: -85px;
+    margin: 10px 10px 0 0;
+}
+
+.gallery .m2 {
+    width: 540px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../img/m2.jpg);
+    background-size: 100%;
+    margin: 10px 0 50px 0;
+}
+
+/**/
+
+#questions {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 30px;
+}
+
+#questions h1 {
+    font-size: 35px;
+    margin-bottom: 5%;
+    border-bottom: 3px solid #e78200;
+    width: 520px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#questions main {
+    margin: 5%;
+}
+
+#questions img {
+    height: 100%;
+    margin-top: 260px;
+}
+
+.lista_item {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(1, 1, 1, 0.1);
+}
+
+.faq_title {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.faq_title::before {
+    content: '+';
+    transition: 300ms;
+    margin-right: 30px;
+    color: #e78200;
+} 
+
+.faq_content {
+    padding: 10px;
+    line-height: 1.4em;
+    display: none;
+}
+
+.trigger_input {
+    display: none;
+}
+
+.trigger_input:checked + .trigger_wrapper .faq_title::before {
+    content: '>';
+}
+
+.trigger_input:checked + .trigger_wrapper .faq_content {
+    display: block;
+}
+
+#ask {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+#ask h1 {
+    font-size: 30px;
+    margin-bottom: 5%;
+    color: #083b66;
+    text-align: center;
+}
+
+#ask input, #ask textarea{
+    padding: 15px;
+    width: 600px;
+    border: none;
+    border-radius: 5px;
+    margin: 3%;
+    background-color: rgb(245, 245, 245);
+}
+
+#ask input.send {
+    background-color: #083b66;
+    color: #fff;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+/**/
+
+header.pag_reserve {
+    background-image: url(../img/reserve.jpg);
+    background-position: 0;
+}
+
+#reserve h1 {
+    margin: 0 0 20px 15%;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #cf1717;
+    width: 260px;
+    padding-bottom: 10px;
+}
+
+#reserve input, textarea {
+    width: 40%;
+    padding: 15px;
+    margin: 0 0 0.3% 5%;
+    border: none;
+    border-radius: 5px;
+}
+
+#reserve .send {
+    background-color: #cf1717;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#contact {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .one {
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    align-self: center;
+}
+
+#contact .two {
+    background-color: rgb(249, 249, 249);
+    padding: 29px;
+    align-self: center;
+}
+
+#contact .one i, #contact .two i {
+    color: #cf1717;
+    margin-right: 10px;
+}
+
+/**/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+footer img {
+    height: 100px;
+}
