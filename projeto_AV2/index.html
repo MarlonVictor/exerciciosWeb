@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png">
     <title>AUTO LEASING</title>
 </head>
 <body>
     
-    <header>
+     <header>
         <div id="header_top">
-            <img src="img/logo.png" alt="Logo da Página">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo da Página"></a>
             <ul>
                 <li><a href="reserve.html">Reserva</a></li>
                 <li><a href="questions.html">Perguntas Frequentes</a></li>
@@ -23,8 +24,43 @@
         </div>
     </header>
 
+    <section id="carrossel">
+        <p><strong>CATEGORIAS DE CARROS DISPONÍVEIS</strong> COM A AUTO LEASING</p>
+        <div class="container">
+            <div class="item">
+                <img src="img/car1.png">
+            </div>
+            <div class="item">
+                <img src="img/car2.png">
+            </div>
+            <div class="item">
+                <img src="img/car3.png">
+            </div>
+            <div class="item">
+                <img src="img/car4.png">
+            </div>
+            <div class="item">
+                <img src="img/car5.png">
+            </div>
+            <div class="item">
+                <img src="img/car6.png">
+            </div>
+            <div class="item">
+                <img src="img/car7.png">
+            </div>
+            <div class="item">
+                <img src="img/car8.png">
+            </div>
+            <div class="item">
+                <img src="img/car9.png">
+            </div>
+        </div>
+
+        <div class="controls"></div>
+    </section>
+
     <section id="benefits">
-        <img src="img/benefits.jpg" alt="Mercedes-Bens">
+        <img src="img/benefits.jpg" alt="Mercedes-Bens" data-anime="left">
         <div id="benefits_desc">
             <h1>Nossos Benefícios</h1>
             <p>A Auto Leasing atende a área metropolitana do Rio de Janeiro há mais de dezoito anos, oferecendo atendimento personalizado inigualável e preços imbatíveis ao aluguel de carros.Se você precisa alugar um carro para uma reunião de negócios, férias turísticas ou apenas para dar uma volta na Cidade Maravilhosa, nossos funcionários dedicados o ajudarão a encontrar o veículo mais adequado para suas necessidades.</p>
@@ -34,7 +70,7 @@
             <p class="arrow">Política para jovens condutores: aluguel de carro, van ou SUV por mais de 18 anos Atendimento ao cliente pessoal e profissional disponível 24 horas por dia, 7 dias por semana.</p>
         </div>
     </section>
-
+    
     <section id="banner">
         <h1>Por que alugar seu carro com a Auto Leasing no Rio?</h1><br>
         <p>Você deseja navegar por uma das cidades mais populares do Brasil ou fazer uma viagem pelo país? A Auto Leasing está aqui para ajudar. Um aluguel de carro na aqui oferece uma sensação incomparável de liberdade e flexibilidade, convidando você a mergulhar profundamente na riqueza cultural e histórica desta bela cidade. Alugue um carro que melhor se adapte à sua viagem usando o nosso painel de reservas. Alugar um carro nunca foi tão fácil e você desfruta de uma variedade de benefícios.</p>
@@ -54,17 +90,20 @@
         </div>
     </section>
 
-    <div id="card">
-        <div class="card_desc">
-            <span>10% de desconto em qualquer locação!</span>
-            <p>Somente locatários pela primeira vez!</p>
+    <section id="card">
+        <div class="counter">
+            <h1>Promoção acaba em:
+                <span id="timer-hours"></span>h 
+                <span id="timer-minutes"></span>m 
+                <span id="timer-seconds"></span>s
+            </h1>            
+            <p>10% de desconto em qualquer locação!</p>
         </div>
         <div class="card_button">
-            <button onclick="window.location.href = 'reserve.html'">RESERVE ONLINE AGORA</button>
+            <button onclick="window.location.href = 'reserve.html'" data-anime="right">RESERVE ONLINE AGORA</button>
         </div>
-        
-    </div>
-
+    </section>
+    
     <section id="Luxury">
         <h1>Frota de luxo para locação de automóveis</h1>
         <div class="gallery">
@@ -76,12 +115,12 @@
             <div class="ferrari">
                 <h3>Ferrari California GT</h3>
                 <p>Passageiros: 2 | Potência: 460cv | Transmição: Auto</p>
-                <h3>R$2500/dia ou R$320/hora</h3>
+                <h3>R$3500/dia ou R$520/hora</h3>
             </div>
-            <div class="aston">
-                <h3>Aston Martin convertible</h3>
-                <p>Passageiros: 2 | Potência: 595cv | Transmição: Auto</p>
-                <h3>R$3100/dia ou R$500/hora</h3>
+            <div class="tt">
+                <h3>Audi TTrs</h3>
+                <p>Passageiros: 4 | Potência: 495cv | Transmição: Auto</p>
+                <h3>R$2400/dia ou R$300/hora</h3>
             </div>
             <div class="m2">
                 <h3>BMW M2</h3>
@@ -97,5 +136,6 @@
         <p>Dev: Marlon Victor</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
