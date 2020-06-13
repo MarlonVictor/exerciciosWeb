@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+    #Luxury .gallery {
+        .r8, .ferrari, .tt, .m2 {
+            margin: 10px 0;
+            width: 90vw; 
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    #header_desc {
+        font-size: 15px;
+        line-height: 50px;
+    }
+    #benefits {
+        img {
+            display: none;
+        }
+        #benefits_desc{
+            width: 70%;
+            margin: auto;
+    
+            p {
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #carrossel p{
+        font-size: 14px;
+        width: 450px;
+    }
+    #banner {
+        padding: 50px;
+        .cards {
+            flex-direction: column;
+        }
+    }
+    #card {
+        flex-direction: column;
+        height: 30vh;
+        button {
+            margin-top: 10px;
+        }
+    }
+/**/
+    #questions {
+        h1 {
+            font-size: 30px;
+            width: 100%;
+        }
+        main {
+            width: 90%;
+        }
+        img{
+            display: none;
+        }
+    }
+    #ask input, #ask textarea {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .enviado {
+        position: relative;
+        right: 13px;
+    }
+/**/
+    header.pag_reserve {
+        height: 100%;
+    }
+
+    #header_top {
+        img {
+            width: 100px;
+        }
+        li:first-child {
+            width: 50px;
+            margin-right: 50px;
+        }
+        a {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    #reserve {
+        padding-bottom: 50px;
+
+        h1 {
+            margin-left: 25%;
+        }
+        input, textarea {
+            margin-top: 2px;
+            width: 90%;
+        }
+    }
+    #contact {
+        flex-direction: column;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .one, .two {
+            width: 80%;
+            height: 95px;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #header_desc {
+        width: 90%;
+        text-align: center;
+    }
+    #card {
+        font-size: 13px;
+    }
+    #Luxury .gallery {
+        .r8, .ferrari, .tt, .m2 {
+            height: 450px;
+        }
+    }
+}
