@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pense Bem Simulator</title>
+</head>
+
+<body>
+    <div id="content">
+
+        <header id="top">
+            <div class="visores">
+                <input type="text" id="visor1" value="*" readonly class="visor">
+                <input type="text" id="visor2" readonly class="visor">
+            </div>
+            <img src="side.jpg" id="visor1-img">
+        </header>
+        
+        <h1>Pense Bem</h1>
+
+        <section class="background">
+            <div class="buttons">
+                <div class="left">
+                    <input type="button" id="botaoA" value="A" class="btn">
+                    <input type="button" id="botaoB" value="B" class="btn">
+                    <input type="button" id="botaoC" value="C" class="btn">
+                    <input type="button" id="botaoD" value="D" class="btn">
+                </div>
+                <div class="right">
+                    <button onclick="enter()">Enter</button>
+                    <button onclick="off()">Desl.</button>
+                    <button onclick="on()">Liga</button>
+                </div>
+            </div>
+    
+            <div class="bottom">
+                <button onclick="addNumber(0)"><b>0</b></button>
+                <button onclick="addNumber(1)"><b>1</b></button>
+                <button onclick="addNumber(2)"><b>2</b></button>
+                <button onclick="addNumber(3)"><b>3</b></button>
+                <button onclick="addNumber(4)"><b>4</b></button>
+                <button onclick="addNumber(5)"><b>5</b></button>
+                <button onclick="addNumber(6)"><b>6</b></button>
+                <button onclick="addNumber(7)"><b>7</b></button>
+                <button onclick="addNumber(8)"><b>8</b></button>
+                <button onclick="addNumber(9)"><b>9</b></button>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
