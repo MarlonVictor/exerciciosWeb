@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/3062/3062795.svg">
     <title>Pense Bem Simulator</title>
 </head>
 
@@ -18,7 +18,7 @@
                 <input type="text" id="visor1" value="*" readonly class="visor">
                 <input type="text" id="visor2" readonly class="visor">
             </div>
-            <img src="side.jpg" id="visor1-img">
+            <img src="public/side.jpg" id="visor1-img">
         </header>
         
         <h1>Pense Bem</h1>
@@ -26,10 +26,10 @@
         <section class="background">
             <div class="buttons">
                 <div class="left">
-                    <input type="button" id="botaoA" value="A" class="btn">
-                    <input type="button" id="botaoB" value="B" class="btn">
-                    <input type="button" id="botaoC" value="C" class="btn">
-                    <input type="button" id="botaoD" value="D" class="btn">
+                    <input type="button" id="botaoA" value="A" class="btn" onclick="jogar(this.value)">
+                    <input type="button" id="botaoB" value="B" class="btn" onclick="jogar(this.value)">
+                    <input type="button" id="botaoC" value="C" class="btn" onclick="jogar(this.value)">
+                    <input type="button" id="botaoD" value="D" class="btn" onclick="jogar(this.value)">
                 </div>
                 <div class="right">
                     <button onclick="enter()">Enter</button>
@@ -53,6 +53,6 @@
         </section>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="public/scripts.js"></script>
 </body>
 </html>
